@@ -35,6 +35,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
     "compressor",
+    'constance',
+    'constance.backends.database',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -118,3 +120,21 @@ COMPRESS_PRECOMPILERS = (
     # Depends on "npm install -g less"
     ('text/less', 'lessc {infile}'),
 )
+
+
+# Constance settings (django_compressor)
+# ----------------------------------------------------------------------------------
+
+CONSTANCE_CONFIG = {
+    # Symlink created with
+    # mklink /D "web\main\data\posts" "C:\Users\Home\Google Drive\Posts"
+    'POSTS_DIR': (os.path.join(BASE_DIR, 'main/data/posts/'), 'Full path to posts folder from Google drive'),
+}
+
+CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
+
+CONSTANCE_DATABASE_PREFIX = 'constance'
+
+# Incompatible with the default LocMemCache.
+# TODO: It needs a cross-process cache like memcached. Or switch to REDIS backend.
+# CONSTANCE_DATABASE_CACHE_BACKEND = 'default'

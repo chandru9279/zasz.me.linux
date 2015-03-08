@@ -1,0 +1,6 @@
+Django==1.7.5
+django-appconf==1.0.1
+django-compressor==1.4
+django-constance==1.0.1
+django-picklefield==0.3.1
+six==1.9.0

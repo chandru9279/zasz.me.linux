@@ -5,5 +5,6 @@ import blog.views
 urlpatterns = patterns('',
     url(r'^$', blog.views.post_list, name='home'),
     url(r'^post/', blog.views.post_list),
+    url(r'^sync/posts$', blog.views.sync_posts),
     url(r'^admin/', include(admin.site.urls)),
 )
