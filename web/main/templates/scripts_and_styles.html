@@ -1,10 +1,9 @@
 {% load staticfiles %}
 {% load compress %}
 {% compress css %}
-<link rel="stylesheet" href="{% static 'jquery-ui/jquery-ui.less' %}" type="text/less" charset="utf-8">
-<link rel="stylesheet" href="{% static 'jPicker/jPicker-1.1.6.css' %}" type="text/css" charset="utf-8">
-<link rel="stylesheet" href="{% static 'SyntaxHighlighter/shCoreDefault.css' %}" type="text/css" charset="utf-8">
-<link rel="stylesheet" href="{% static 'BlueprintReset.css' %}" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="{% static 'jquery-ui/themes/base/jquery-ui.min.css' %}" type="text/less" charset="utf-8">
+<link rel="stylesheet" href="{% static 'SyntaxHighlighter/styles/shCoreDefault.css' %}" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="{% static 'foundation/css/normalize.css' %}" type="text/css" charset="utf-8">
 <link rel="stylesheet" href="{% static 'Layout.less' %}" type="text/less" charset="utf-8">
 {% endcompress %}
 
@@ -18,16 +17,11 @@
 
 
 {% compress js %}
-<script type="text/javascript" src="{% static 'Scripts/ckeditor/ckeditor.js' %}" ></script>
-<script type="text/javascript" src="{% static 'Scripts/jquery.validate.min.js' %}" ></script>
-<script type="text/javascript" src="{% static 'Scripts/jquery.validate.unobtrusive.min.js' %}" ></script>
-<script type="text/javascript" src="{% static 'Scripts/jpicker-1.1.6.js' %}" ></script>
-<script type="text/coffeescript" src="{% static 'Scripts/Scripts.coffee' %}" ></script>
-{% endcompress %}
-
-{% compress js %}
-<script type="text/javascript" src="{% static 'Scripts/SyntaxHighlighter/shCore.js' %}" ></script>
-<script type="text/javascript" src="{% static 'Scripts/SyntaxHighlighter/shAutoloader.js' %}" ></script>
+<script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}" ></script>
+<script type="text/javascript" src="{% static 'jquery-validation/dist/jquery.validate.min.js' %}" ></script>
+<script type="text/coffeescript" src="{% static 'Scripts.coffee' %}" ></script>
+<script type="text/javascript" src="{% static 'SyntaxHighlighter/scripts/shCore.js' %}" ></script>
+<script type="text/javascript" src="{% static 'SyntaxHighlighter/scripts/shAutoloader.js' %}" ></script>
 {% endcompress %}
 
 <meta name="robots" content="index, follow" />
