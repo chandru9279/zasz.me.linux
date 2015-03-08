@@ -1,0 +1,26 @@
+{
+  "name": "zasz.me",
+  "version": "1.0.0",
+  "homepage": "http://zasz.me/",
+  "authors": [
+    "Chandirasekar T <chandru9279+npm@gmail.com>"
+  ],
+  "description": "Chandru's profile website",
+  "main": "main",
+  "keywords": [
+    "zasz",
+    "chandru"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "SyntaxHighlighter": "~3.0.83"
+  }
+}
