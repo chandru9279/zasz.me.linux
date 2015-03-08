@@ -1,0 +1,55 @@
+﻿@bground: #E5E5E5;
+@fground: #333333;
+
+@sitewidth: 960px;
+@leftwidth: 700px;
+@rightwidth: 240px;
+@leftmargin: 20px;
+
+@black: #090909;
+@silver: #A8A8A8;
+@gray: #454545;
+@sky: #00A8FD;
+@navy: #001C4E;
+@maroon: #500000;
+
+.stackleft()
+{
+	display: block;
+	clear: left;
+	float: left;
+}
+
+.radius(@rad)
+{
+	-moz-border-radius: @rad;
+	-webkit-border-radius: @rad;
+	border-radius: @rad;
+}
+
+.boxshadow(@sh)
+{
+	-moz-box-shadow: @sh;
+	-webkit-box-shadow: @sh;
+	box-shadow: @sh;
+}
+
+.transition(@prop, @time)
+{
+transition: @prop @time;
+-moz-transition: @prop @time, -moz-transform @time;
+-webkit-transition: @prop @time, -webkit-transform @time;
+-o-transition: @prop @time, -o-transform @time;
+}
+
+.textshadow(@sh) {
+  text-shadow: @sh;
+}
+
+@placeholder: #B2B2B2;
+@placefocus: #CCCCCC;
+
+@formbg: #F4F4F4;
+@formfocus: #AAAAAA;
+
+@panelborder: 2px solid #EDEDED;

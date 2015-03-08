@@ -1,0 +1,172 @@
+.TextHover 
+{
+	cursor: text;
+	border-color: @formfocus;
+}
+
+.GeneralText
+{
+	background-color: @formbg;
+    border-style: solid;
+	cursor: text;
+	border-width: 1px;
+	border-color: @bground;
+	&:HOVER
+	{
+	.TextHover;
+	}
+	&:FOCUS
+	{
+	.TextHover;
+	}
+}
+
+.TextBox
+{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 230px;
+    padding: 6px 5px 6px 5px;    
+	.GeneralText;
+}
+
+.TextArea
+{
+    padding: 6px 5px 5px;
+    margin: 20px auto;
+    width: 460px;
+    background-color: @formbg;
+	&:HOVER
+	{
+	.TextHover;
+	}
+	&:FOCUS
+	{
+	.TextHover;
+	}
+}
+
+.Button
+{
+    padding: 7px;
+	text-align: center;
+	text-transform: lowercase;
+    border: 0px;
+	background-color: @navy;
+	color: white;
+	display: block;
+	.radius(2px);
+    .boxshadow(2px 2px 3px 1px #888);
+	&:HOVER
+	{		
+		color: @fground;
+		background-color: @formfocus;
+		cursor: pointer;
+	}
+}
+
+select.TextBox:HOVER, select.TextBox:focus
+{
+    cursor: pointer;    
+}
+
+textarea
+{
+    min-height: 75px;
+}
+
+.editor-label
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field
+{
+    margin: 0.5em 0 0 0;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: @maroon;
+    padding: 1px 15px;
+	display: block;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid @maroon;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+    background-color: #FFEBE0;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+
+.Expand-Panel
+{
+    width: 680px;
+    padding: 10px 0px;
+	&:HOVER
+	{
+		background: #1B1D26;
+		cursor: pointer;
+	}
+}
+
+.Expand-Button
+{
+    text-align: center;
+    padding: 3px;
+    border: 1px solid #1B1D26;
+    background-color: #425955;
+    cursor: pointer;
+    color: #F1F2D8;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.Panel
+{
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #1B1D26;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+::-webkit-input-placeholder {
+    color: @placeholder;
+}
+
+input:focus::-webkit-input-placeholder {
+	color: @placefocus; 
+}
+
+:-moz-placeholder {
+    color: @placeholder;
+	&:focus{
+	color: @placefocus; 
+	}
+}
+
+:-ms-input-placeholder {
+	color: @placeholder;
+}

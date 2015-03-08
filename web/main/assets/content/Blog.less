@@ -1,0 +1,166 @@
+﻿.Post
+{
+	.stackleft();
+	margin: 20px 0px;
+}
+
+.Post-Title
+{
+	.stackleft();
+    font-size:24px; 
+}
+
+.Light-Message
+{
+	em
+	{
+		font-weight: bold;
+	}
+}
+
+.Date
+{
+	.stackleft();
+    color: @silver;
+    font-size: 18px;
+	text-transform: uppercase;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.Post-Content
+{
+	.Anchor
+	{
+		.stackleft();
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 20px;
+		margin-left: 0px;
+		min-width: 150px;
+		min-height: 150px;
+		max-width: 250px;
+		max-height: 250px;
+	}
+	.stackleft();
+	padding: 10px 0px;
+    ul
+	{
+		margin: 10px;
+		list-style-type: disc;
+	}
+	ol
+	{
+		margin-left: 10px;
+		list-style-type: decimal;		
+	}
+	strong { font-weight: bold; }
+	em { font-style: italic; }
+	p { margin-bottom: 15px; }
+	a { color: @sky; }	
+	img.Surround { .stackleft(); margin: 10px; }	
+	img.Block { display: block; margin: 10px; }	
+}
+
+.Tags
+{
+    display: inline;
+	li
+	{
+		display: inline;
+		a
+		{
+			.radius(1px);
+			margin: 2px;
+			padding: 2px 10px;
+			display: inline-block;
+			background-color: @navy;
+			color: White;
+			font-size: 12px;
+			text-decoration: none;
+			font-weight: bold;
+			&:HOVER
+			{
+				cursor: pointer;
+				background-color: White;
+				color: @navy;
+			}
+		}
+	}
+}
+
+.Short-Footer
+{
+	.stackleft();
+	color: @sky;
+	width: 100%;
+	a 
+	{
+		color: @sky;
+	}	
+	.More
+	{
+		float: right;
+	}
+}
+
+.Post-Footer
+{
+	.stackleft();
+	width: 100%;
+	background-color: @bground;
+    padding: 10px;
+    margin: 20px auto;
+    .radius(1px);
+}
+
+.Paging 
+{
+    display: table;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 20px;
+	a, span
+	{
+		display: block;
+		float: left;
+		padding: 3px 5px 3px 5px;
+		margin-right: 3px;
+	}
+	span.Current
+	{
+		font-weight: bold;
+	}
+	span.DisabledPrevNext
+	{
+		color: @bground;
+	}
+}
+
+.TagCloud
+{
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.TagHover
+{
+    display:block;
+    border-style: none;
+    position:absolute;
+    z-index:10;
+	&:HOVER
+	{    
+		display:block;
+		border: @panelborder;
+		cursor: pointer;  
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
+}
+
+.Result-Highlight 
+{
+    font-weight: bolder;    
+}

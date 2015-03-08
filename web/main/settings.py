@@ -96,8 +96,9 @@ STATICFILES_FINDERS = (
 
 STATICFILES_DIRS = (
     # Remove both below, and use front end package manager, and 2 folders for my scripts and styles
-    os.path.join(BASE_DIR, "../../../zasz.me/Content/"),
-    os.path.join(BASE_DIR, "../../../zasz.me/"),
+    os.path.join(BASE_DIR, "main/assets/content/"),
+    os.path.join(BASE_DIR, "main/assets/scripts/"),
+    os.path.join(BASE_DIR, "main/assets/vendor/"),
 )
 
 STATIC_ROOT = os.path.join(BASE_DIR, "../build/assets/")
