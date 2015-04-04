@@ -1,0 +1,16 @@
+# DB and cache
+web/db.sqlite3
+__pycache__/
+
+# Idea
+web/*.iws
+web/.idea/workspace.xml
+web/.idea/tasks.xml
+
+# Virtualenv
+zmv/
+
+# Node
+web/node_modules/
+
+

@@ -70,7 +70,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'IST'
+TIME_ZONE = 'Asia/Calcutta'
 
 USE_I18N = True
 
@@ -116,9 +116,9 @@ COMPRESS_PRECOMPILERS = (
     # Added c:\ProgramData\chocolatey\lib\nodejs.commandline.0.10.34\tools\ to PATH
 
     # Depends on "npm install -g coffee-script"
-    ('text/coffeescript', 'coffee --compile --stdio'),
+    ('text/coffeescript', os.path.join(BASE_DIR, 'node_modules/.bin/') + 'coffee --compile --stdio'),
     # Depends on "npm install -g less"
-    ('text/less', 'lessc {infile}'),
+    ('text/less', os.path.join(BASE_DIR, 'node_modules/.bin/') + 'lessc {infile}'),
 )
 
 
