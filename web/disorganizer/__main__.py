@@ -1,18 +1,25 @@
-__author__ = 'Home'
-from disorganizer import freetype_font_cairo
 import cairocffi as cairo
 
 width = 500
 height = 500
 
+SpiralRoom
+
 surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, width, height)
 context = cairo.Context(surface)
-context.set_antialias(cairo.ANTIALIAS_BEST)
 center = (width / 2, height / 2)
+
 context.set_operator(cairo.OPERATOR_CLEAR)
 context.paint()
 
-face = freetype_font_cairo.create_cairo_font_face_for_file("Y:/Vasaz/Repos/Confidence/web/disorganizer/Steelfish.ttf", 0)
+context.set_operator(cairo.OPERATOR_SOURCE)
+context.set_antialias(cairo.ANTIALIAS_BEST)
+
+context.set_source_rgb(0, 0, 0)
+context.set_font_face(cairo.ToyFontFace("Steelfish"))
+context.set_font_size(60)
+context.move_to(200, 200)
+context.show_text("SampleSteelTag")
 
 surface.flush()
 surface.write_to_png("./img.png")
