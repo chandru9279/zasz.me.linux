@@ -1,15 +1,16 @@
 #!/bin/bash
+# Credits : https://stackoverflow.com/questions/3466166/how-to-check-if-running-in-cygwin-mac-or-linux/17072017#17072017
 
 if [ "$(uname)" == "Darwin" ]; then
-    # Do something under Mac OS X platform
-echo 'TODO: mac helper'
+# Mac OS X platform
+cd web && python manage.py "$@" && cd ../
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-# Do something under Linux platform
+# Linux platform
 cd web && python manage.py "$@" && cd ../
 
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
-# Do something under Windows NT platform
+# Windows NT platform
 command="$@" 
 cmd "/C cd web & manage.py $command & cd ..\
 "
