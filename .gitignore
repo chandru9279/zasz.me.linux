@@ -5,9 +5,9 @@ web/main/data/posts
 web/img.png
 
 # Idea
-web/*.iws
-web/.idea/workspace.xml
-web/.idea/tasks.xml
+*.iws
+**/.idea/workspace.xml
+**/.idea/tasks.xml
 
 # Virtualenv
 zmv/
