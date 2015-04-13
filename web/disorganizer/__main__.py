@@ -3,7 +3,6 @@ import cairocffi as cairo
 width = 500
 height = 500
 
-SpiralRoom
 
 surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, width, height)
 context = cairo.Context(surface)

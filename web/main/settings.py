@@ -128,6 +128,7 @@ COMPRESS_PRECOMPILERS = (
 CONSTANCE_CONFIG = {
     # Symlink created with
     # mklink /D "web\main\data\posts" "C:\Users\Home\Google Drive\Posts"
+    # ln -s ~/Google\ Drive/Posts ~/repos/zasz.me.linux/web/main/data/posts
     'POSTS_DIR': (os.path.join(BASE_DIR, 'main/data/posts/'), 'Full path to posts folder from Google drive'),
 }
 

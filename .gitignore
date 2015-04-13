@@ -1,6 +1,8 @@
 # DB and cache
 web/db.sqlite3
 __pycache__/
+web/main/data/posts
+web/img.png
 
 # Idea
 web/*.iws
