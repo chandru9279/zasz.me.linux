@@ -1,5 +1,6 @@
 import cairocffi as cairo
 
+
 class TagCloudService:
     def __init__(self):
         self.width = 500
@@ -19,6 +20,7 @@ class TagCloudService:
 
         self.surface.flush()
         self.surface.write_to_png("./img.png")
+        self.surface.finish()
 
     def prepare_surface(self):
         self.context.set_operator(cairo.OPERATOR_CLEAR)
